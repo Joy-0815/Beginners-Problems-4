@@ -1,5 +1,4 @@
 password = False
-number = False
 addition = 1
 lock = 3
 numbers = 0
@@ -10,10 +9,11 @@ while not password:
      print("Correct password.")
 
     else:
-         while not number:
+         while not password:
              numbers = numbers + addition 
-             print("Incorrect.",lock-numbers,"chances left.")
-             if numbers == 0:
+             if numbers != 0
+                 print("Incorrect.",lock-numbers,"chances left.")
+             elif numbers == 0:
                  number = True
                  print("Locked.")
                  break

@@ -7,13 +7,11 @@ while not password:
     if answer == "school":
      password = True
      print("Correct password.")
-
     else:
-         while not password:
-             numbers = numbers + addition 
-             if numbers != 0
-                 print("Incorrect.",lock-numbers,"chances left.")
-             elif numbers == 0:
-                 number = True
-                 print("Locked.")
-                 break
+     lock = lock - 1
+     if lock != 0:
+         print("Incorrect.",lock,"chances left")
+     elif lock == 0:
+         password = True
+         print("Locked.")
+         break

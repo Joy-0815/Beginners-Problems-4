@@ -5,8 +5,9 @@ times = 0
 while not numbs:
     multi = int(input("Enter a positive number."))
     if multi <=0:
-        print("Try again.")
+        print("Please enter a positive number, not a negative number.")
     else:
-        for num in range (0,999999999):
+        numbs = True
+        for num in range (0,inf):
             times = times + 1
             print(multi*times)
